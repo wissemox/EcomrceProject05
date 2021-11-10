@@ -1,0 +1,33 @@
+.bg-transparent {
+  background-color: "transparent";
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.bg-gris {
+  background-color: #343A40;
+}
+
+.backgroundImage {
+  background: url("Untitled-3.png") no-repeat;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.backgroundImage01 {
+  background: url("test copy 5.jpg") no-repeat fixed 100% 100%;
+  background-size: cover;
+}
+
+.backgroundImage01Admin {
+  background: url("BackgroundADMIN copy 5.png") no-repeat fixed 100% 100%;
+  background-size: cover;
+}
+
+.backgroundImageColorOrange {
+  background-color: #ee4843;
+}
+/*# sourceMappingURL=background.css.map */

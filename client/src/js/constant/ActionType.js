@@ -1,0 +1,8 @@
+export const AddProduct = "AddProduct"
+export const ReturnNull = "ReturnNull"
+export const ALLProduct="ALLProduct"
+export const RegisterUser ="RegisterUser"
+export const LoginUser ="LoginUser"
+export const DecodedUser ="DecodedUser"
+export const ProductValideMsg ="ProductValideMsg"
+export const ActionValidetReturnNull = "ActionValidetReturnNull"

@@ -1,0 +1,121 @@
+.ImageMenuHeightResposive {
+  height: 82vh;
+}
+
+.DisplayNoneeRepsoive02 {
+  display: none;
+}
+
+.PaddingResposiveTopMenu {
+  padding-top: 190px;
+}
+
+.f-60Resposive {
+  font-size: 60px;
+}
+
+@media screen and (max-width: 1400px) {
+  .ImageMenuHeightResposive {
+    height: 83vh;
+  }
+  .PaddingResposiveTopMenu {
+    padding-top: 200px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .ImageMenuHeightResposive {
+    height: 76vh;
+  }
+  .PaddingResposiveTopMenu {
+    padding-top: 200px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .ImageMenuHeightResposive {
+    height: 77vh;
+  }
+  .PaddingResposiveTopMenu {
+    padding-top: 200px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .ImageMenuHeightResposive {
+    height: 77vh;
+  }
+  .PaddingResposiveTopMenu {
+    padding-top: 200px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .ImageMenuHeightResposive {
+    height: 75vh;
+  }
+  .PaddingResposiveTopMenu {
+    padding-top: 200px;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .ImageMenuHeightResposive {
+    height: 76vh;
+  }
+  .PaddingResposiveTopMenu {
+    padding-top: 200px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .DisplayNoneReposivePhone {
+    display: none;
+  }
+  .DisplayNoneeRepsoive02 {
+    display: block;
+  }
+  .ImageMenuHeightResposive {
+    height: 76vh;
+  }
+  .PaddingResposiveTopMenu {
+    padding-top: 200px;
+  }
+  .DisplayNoneReposivePhone01 {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .f-60Resposive {
+    font-size: 50px;
+  }
+  .ImageMenuHeightResposive {
+    height: 75vh;
+  }
+  .PaddingResposiveTopMenu {
+    padding-top: 200px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .f-60Resposive {
+    font-size: 40px;
+  }
+  .fonSizeReposiveMenu {
+    font-size: 65%;
+  }
+  .widhtResposiveMenuButton {
+    width: 100px;
+  }
+  .f-20Resposive {
+    font-size: 15px;
+  }
+  .ImageMenuHeightResposive {
+    height: 74vh;
+  }
+  .PaddingResposiveTopMenu {
+    padding-top: 200px;
+  }
+}
+/*# sourceMappingURL=Menu.css.map */

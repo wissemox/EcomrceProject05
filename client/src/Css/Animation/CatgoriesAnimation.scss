@@ -1,0 +1,112 @@
+.CatgoriesSHow{
+    -webkit-transition: 4s;
+  
+    animation:CatgoriesSHow01 4s;
+  }
+  
+
+  @keyframes CatgoriesSHow01 {
+    from{
+     opacity: 0;
+    }
+    to{
+     opacity: 1;
+    }
+  }
+
+//   
+
+.CatgoriesSHow02{
+    -webkit-transition: 3s;
+  
+    animation:CatgoriesSHow02 6s;
+  }
+  
+
+  @keyframes CatgoriesSHow02 {
+    from{
+     opacity: 0;
+    }
+    to{
+     opacity: 1;
+    }
+  }
+
+
+  .CatgoriesSHow04{
+    -webkit-transition: 2s;
+  
+    animation:CatgoriesSHow04 2s;
+  }
+  
+
+  @keyframes CatgoriesSHow04 {
+    from{
+     opacity: 0;
+    }
+    to{
+     opacity: 1;
+    }
+  }
+  .AnimationOnMarginTopTomid02{
+    padding-top: 100px;
+    animation:AnimationOnMarginTopTomid03 2s;
+
+  }
+
+  @keyframes AnimationOnMarginTopTomid03 {
+  //  0%{
+  //    display: none;
+  //    padding-top: 0px;
+  //  }
+  //  50%{
+  //    display: none;
+  //    padding-top: 0px;
+  //  }
+  from{
+    display: none;
+    padding: 0px;
+  }
+   to{
+     padding-top: 100px;
+   }
+  }
+  .AnimationOnMarginTopTomid{
+    padding-top: 150px;
+    animation:AnimationOnMarginTopTomid01 2s;
+
+  }
+
+  @keyframes AnimationOnMarginTopTomid01 {
+  //  0%{
+  //    display: none;
+  //    padding-top: 0px;
+  //  }
+  //  50%{
+  //    display: none;
+  //    padding-top: 0px;
+  //  }
+  from{
+    display: none;
+    padding: 0px;
+  }
+   to{
+     padding-top: 150px;
+   }
+  }
+  //
+  .CatgoriesSHow03{
+    -webkit-transition: 4s;
+  
+    animation:CatgoriesSHow03 10s;
+  }
+  
+
+  @keyframes CatgoriesSHow03 {
+    from{
+     opacity: 0;
+    }
+    to{
+     opacity: 1;
+    }
+  }

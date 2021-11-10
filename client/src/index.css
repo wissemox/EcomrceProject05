@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.colorLogo{
+  color: #ee4843;
+}
+.colorLogo02{
+  color: #00B0A4;
+}
+.stickyd{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+.brtopbottom{
+  border-bottom: 1px solid rgb(185, 185, 185);
+  border-top: 1px solid rgb(185, 185, 185);
+}
+.backgroundColorTest{
+  background: rgba(32, 32, 32, 0.1)  
+}
+.backgroundColorTest01{
+  background: rgba(3, 0, 0, 0.37)  
+
+}
+.backgroundColorTest12{
+  background: rgba(42, 199, 220, 0.233) 
+ 
+}
+.backgroundColorTest14{
+  background: rgba(248, 70, 21, 0.205)  
+
+}
+.DisplayProductNoneAnimatiob{
+  display: none;
+}
+.onHoverDiplayProductDatiled:hover .DisplayProductNoneAnimatiob{
+  background: rgba(42, 199, 220, 0.404) ;
+  
+
+  display: block;
+}
+.Animationlogo{
+  animation:Animationlogo 2s infinite  ;
+}
+.Animationlogo01{
+  animation:Animationlogo02 2s infinite  ;
+
+}
+@keyframes Animationlogo02{
+  from {
+    padding-left: 10px;
+    padding-bottom: 10px;
+    transform: rotate(0deg);
+  }
+  to {
+    margin-left: 0px;
+    padding-bottom: 0px;
+
+    transform: rotate(270deg);
+  }
+}
+@keyframes Animationlogo{
+  from {
+    padding-left: 60px;
+    padding-bottom: 40px;
+    transform: rotate(0deg);
+  }
+  to {
+    margin-left: 0px;
+    padding-bottom: 0px;
+
+    transform: rotate(270deg);
+  }
+}
+.backgroundColorTest11{
+  -webkit-transition: 2s;
+ 
+  background: rgba(42, 199, 220, 0.527)  
+
+}
+.counterf{
+  -webkit-text-stroke: 0.7px black; 
+}
+.ImageHoverImg img:hover{
+  -webkit-transition: 1s;
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
+}
+
+
+.HoverWidht25pr{
+  width: 25%;
+}
+.HoverWidht25pr:hover{
+  -webkit-transition: 1s;
+
+  width:40%;
+}
+.BoxShadowdqzd{
+  box-shadow: -12px 0 15px -4px rgba(27, 27, 27, 0.8);
+  background-color: wheat;
+}
+.BoxShadowdqzdsd{
+  box-shadow: 8px 0 10px -4px rgba(80, 80, 80, 0.8);
+  
+}
+
+.ScaleAnimation:hover{
+  -webkit-transition: 1s;
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
+}
+.BordeBottom{
+  border-bottom: 0.5px solid rgba(185, 185, 185, 0.3);
+}
+.Borde{
+  border: 0.5px solid rgba(185, 185, 185, 0.3);
+}
+.ColorTextWhiteOpacity{
+  color: rgba(255, 255, 255, 0.7);
+}

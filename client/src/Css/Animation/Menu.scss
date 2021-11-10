@@ -1,0 +1,103 @@
+.AnimationHoverNavbar{
+    -webkit-transition: 2s;
+  
+    animation:animatio02 0.8s;
+}
+.TESTANIMATIOnNOne{
+  display: none;
+}
+.TestestHoverdqsd{
+  display: block;
+  animation:animatio04 0.8s;
+}
+// AnimationTest
+.HoverPrentazd:hover .TESTANIMATIOnNOne{
+  display: block;
+}
+.HoverPrentazd:hover .TestestHoverdqsd{
+  display: none;
+}
+.AnimationHoverNavbar04{
+  -webkit-transition: 2s;
+
+  animation:AnimationTest06 1s;
+}
+
+
+@keyframes animatio04 {
+  from{
+    background-color: white;
+    color: black;
+    width: 80%;
+    margin-left: -1000px;
+  }
+  to{
+    color: black;
+    margin-left: 0px;
+    width: 100%;
+  }
+}
+@keyframes AnimationTest06 {
+  from{
+    background-color: white;
+    color: black;
+    width: 80%;
+    margin-left: 300px;
+  }
+  to{
+    color: white;
+    margin-left: 0px;
+    width: 100%;
+  }
+}
+.AnimationMarinLeftMenu{
+  animation:AnimationMarinLeftMenu 1s;
+
+}
+@keyframes AnimationMarinLeftMenu {
+  from{
+    margin-left: -100vh;
+  }
+  to{
+    margin-left: 0px;
+  }
+  
+}
+@keyframes animatio02 {
+    from{
+      margin-top: -100vh;
+    }
+    to{
+      margin-top: 0px;
+    }
+    
+  }
+  .AnimationHover{
+    margin-left: 0px;
+    background-color:transparent ;
+    
+  }
+  .AnimationHover :hover{
+    -webkit-transition: 2s;
+   margin-left: -100px;
+   background-color: white;
+  }
+  .AnimaiionNavbarSticky{
+    -webkit-transition: 2s;
+    animation:animatio 1s;
+  }
+  @keyframes animatio{
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+  
+  

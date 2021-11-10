@@ -1,0 +1,72 @@
+.CatgoriesSHow {
+  -webkit-transition: 4s;
+  -webkit-animation: CatgoriesSHow01 4s;
+          animation: CatgoriesSHow01 4s;
+}
+
+@-webkit-keyframes CatgoriesSHow01 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes CatgoriesSHow01 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.CatgoriesSHow02 {
+  -webkit-transition: 3s;
+  -webkit-animation: CatgoriesSHow02 6s;
+          animation: CatgoriesSHow02 6s;
+}
+
+@-webkit-keyframes CatgoriesSHow02 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes CatgoriesSHow02 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.CatgoriesSHow03 {
+  -webkit-transition: 4s;
+  -webkit-animation: CatgoriesSHow03 10s;
+          animation: CatgoriesSHow03 10s;
+}
+
+@-webkit-keyframes CatgoriesSHow03 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes CatgoriesSHow03 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=CatgoriesAnimation.css.map */
