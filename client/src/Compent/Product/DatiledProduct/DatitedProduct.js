@@ -93,7 +93,7 @@ const DatitedProduct = ({ match }) => {
           <div>
             <div
               style={{
-                backgroundColor: "red",
+                backgroundColor: "#f2f2f2",
                 height: "200px",
                 backgroundImage: `url(${el.Image[0]})`,
                 backgroundSize: "cover",
