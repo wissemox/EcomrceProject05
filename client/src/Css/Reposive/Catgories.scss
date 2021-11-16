@@ -1,0 +1,35 @@
+// h-44
+.FontsieResposiveCatgories{
+    font-size: 25px;
+}
+@media screen and (max-width: 700px){
+    .FontsieResposiveCatgories{
+        font-size: 16px;
+    }
+     .h-44{
+            height:120px;
+     }
+     .ptResposiveCatgories{
+         padding-top: 50px;
+     }
+     .marginTopResposiveCatgories{
+         margin-top: 22px;
+     }
+ }
+
+
+ @media screen and (max-width: 600px){
+     .FontsieResposiveCatgories{
+         font-size: 15px;
+     }
+    .h-44{
+           height:100px;
+    }
+    .marginTopResposiveCatgories{
+        margin-top: 41px;
+    }
+
+    .ptResposiveCatgories{
+        padding-top: 40px;
+    }
+}

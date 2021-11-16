@@ -12,6 +12,7 @@ import Catgories from "../src/Compent/HomePage/Catgories/Catgories";
 import Fotter from "./Compent/HomePage/Fotter/Fotter";
 // Admin 
 import Admin from './Compent/Admin/Admin'
+import LoginAdmin from './Compent/Admin/LoginAdmin/LoginAdmin'
 // Registe & login
 import Register from './Compent/Register/Register'
 import Login from './Compent/Login/Login'
@@ -28,6 +29,9 @@ import "./Css/Animation/Menu.scss";
 import "./Css/background/background.scss";
 import "./Css/Reposive/Menu.scss";
 import "./Css/Animation/CatgoriesAnimation.scss";
+import "./Css/Reposive/Spinner.scss"
+import "./Css/Reposive/Catgories.scss"
+import "./Css/Reposive/Product.scss"
 // Route 
 import {Redirect} from 'react-router-dom'
 import LogowhiteAnimatiion from './logo/LogowhiteAnimatiion'
@@ -43,7 +47,7 @@ function App() {
   return (
      <div>
        {Verife ?  <BrowserRouter>
-       {/*Home Page  */}
+       {/*Home Page  */} 
       <Route exact path="/" render={() => <Pannier/> } />
       <Route exact path="/" render={() => <Navbar /> } />
       <Route exact path="/" render={() =>  <MainPage /> } />
@@ -51,7 +55,9 @@ function App() {
       {/* <Route exact path="/" render={() =>  <Catgories /> } /> */}
       {console.log(Catgoire)}
       {/* Admin */}
-      <Route exact path="/Admin" render={() => <Admin/> } />
+      <Route exact path="/Admin" render={() => <LoginAdmin/> } />
+
+      <Route exact path="/Admin/dashboard" render={() => <Admin/> } />
       <Route exact path="/Register" render={() => <Register/> } />
       <Route exact path="/Login" render={() => <Login/> } />
       {/* Product */}
@@ -66,8 +72,8 @@ function App() {
 
         
       
-      </BrowserRouter> :  <div className="flex" style={{backgroundColor:"#2ac6dc" , width:"100%" , height:"100vh" , justifyContent:"center" , paddingTop:"20%"}}> 
-      <div style={{width:"10%"}}> 
+      </BrowserRouter> :  <div className="flex ResposiveSpinner" style={{backgroundColor:"#2ac6dc" , width:"100%" , height:"100vh" , justifyContent:"center" , paddingTop:"40vh"}}> 
+      <div style={{width:"20vh"}} className="SpinnerReposiveWidht"  > 
  
       {/* <img className="Animationlogo" src={process.env.PUBLIC_URL +"LogowhiteAnimation.svg"}/> */}
       <LogowhiteAnimatiion className="Animationlogo"  />

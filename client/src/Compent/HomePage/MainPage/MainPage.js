@@ -6,7 +6,7 @@ const MainPage = () => {
   // DisplayNoneReposivePhone
   return (
     <div>
-      <div  style={{height:"110px"}} >
+      <div   style={{height:"110px"}} >
       <video autoPlay loop muted
                 style={{
                     position:"absolute" , 

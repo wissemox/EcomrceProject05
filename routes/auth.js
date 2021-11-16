@@ -81,7 +81,7 @@ router.post('/Product', async(req,res)=>{
            
         })
         if(uploadedResponse01){
-            Array.push(uploadedResponse01.url)
+            await    Array.push(uploadedResponse01.url)
         }
       }
   if(image02[1]){
@@ -92,7 +92,7 @@ router.post('/Product', async(req,res)=>{
     })
 
     if(uploadedResponse02){
-        Array.push(uploadedResponse02.url)
+       await Array.push(uploadedResponse02.url)
     }
   }
   if(image02[2]){
@@ -103,7 +103,7 @@ router.post('/Product', async(req,res)=>{
     })
 
     if(uploadedResponse03){
-        Array.push(uploadedResponse03.url)
+     await   Array.push(uploadedResponse03.url)
     }
   }
   const ProductSave = new Product({ProductName:ProductName , Prix:Prix , Tail:Tail , Image:Array}); 

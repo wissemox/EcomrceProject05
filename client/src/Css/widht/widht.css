@@ -10,6 +10,10 @@
   width: 90%;
 }
 
+.widht80pr {
+  width: 80%;
+}
+
 .widht-10pr {
   width: 10%;
 }
@@ -26,8 +30,12 @@
   width: 35%;
 }
 
-.widht-40pr {
+.widht-20pr {
   width: 40%;
+}
+
+.widht-40pr {
+  width: 50%;
 }
 
 .widht-60pr {

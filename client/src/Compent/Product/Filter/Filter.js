@@ -20,7 +20,7 @@ const Filter = ({Number01 ,setNumber01 , Tile , setTaile , setCatgorie , Catgoir
     },
   });
   return (
-    <div style={{top:"60px"}} className="ml-8 sticky  mt-4">
+    <div style={{top:"80px" , color:"black"}} className="ml-8 sticky  ">
      
      <RadioGroup>
           <MuiThemeProvider theme={theme}>

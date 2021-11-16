@@ -3,4 +3,5 @@ import ProductADD from './ProductReducer'
 import ProductGetAll from './AllProductGet'
 import Register from './Register'
 import ProductValide from './ProductValide'
-export default combineReducers({ProductADD,ProductGetAll,Register , ProductValide})
+import AdminReducer from './Admin'
+export default combineReducers({ProductADD,ProductGetAll,Register , ProductValide , AdminReducer})

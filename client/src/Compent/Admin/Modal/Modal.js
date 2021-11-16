@@ -38,6 +38,7 @@ export default function BasicModal({ SetTogelTest, TogelTest }) {
 
   const handleClose = () => SetTogelTest(false);
   const [File, setFile] = useState();
+  const [File01, setFile01] = useState();
   const MsgProduct = useSelector((state) => state.ProductADD.msg);
   if (MsgProduct) {
     SetTogelTest(false);
@@ -49,6 +50,9 @@ export default function BasicModal({ SetTogelTest, TogelTest }) {
   const[Prix , setPrix]=useState(0)
   const Test = async () => {
     if (File) {
+      const base640 = await converbase64(File01[0]);
+
+      TestArray.push(base640);
       for (let i = 0; i < File.length; i++) {
         const base64 = await converbase64(File[i]);
 
@@ -88,7 +92,21 @@ export default function BasicModal({ SetTogelTest, TogelTest }) {
 
     localStorage.setItem("user", JSON.stringify(TestArray));
   };
+  const HandelchangeFile01 = async (e) => {
+    console.log(File01)
+    setFile01(e.target.files);
+    // if(File){
+    //     for(let i = 0 ; i<File.length; i++){
+    //         const base64=await converbase64(File[i])
+    //         console.log()
+    //         TestArray.push(base64)
 
+    //       //   console.log(base64)
+    //       }
+    // }
+
+    localStorage.setItem("user", JSON.stringify(TestArray));
+  };
   return (
     <div>
       {console.log(TestArray)}
@@ -138,6 +156,9 @@ export default function BasicModal({ SetTogelTest, TogelTest }) {
               </div>
             </div>
           </div>
+          <p> Chose background</p>
+          <input type="file"   onChange={(e) => HandelchangeFile01(e)} />
+          <p> Image Tshirt</p>
           <input type="file" multiple onChange={(e) => HandelchangeFile(e)} />
           <button onClick={Test}>Click me</button>
         </Box>

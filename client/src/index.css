@@ -92,6 +92,15 @@ code {
   background: rgba(42, 199, 220, 0.527)  
 
 }
+
+.Scrolloverflow{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  width: 180px;
+  overflow-y: scroll;
+}
 .counterf{
   -webkit-text-stroke: 0.7px black; 
 }
@@ -135,3 +144,4 @@ code {
 .ColorTextWhiteOpacity{
   color: rgba(255, 255, 255, 0.7);
 }
+ 

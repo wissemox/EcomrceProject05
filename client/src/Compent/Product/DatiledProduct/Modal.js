@@ -74,12 +74,12 @@ export default function ModalUnstyledDemo({Image , ProductName, Prix , open , se
    }
   return (
     
-    <div>
+    <div className="ml-14 mt-4 mb-4">
 
-      <Button type="button" onClick={handleOpen}>
+      <button style={{backgroundColor:"#f84816" , borderRadius:"20px",width:"100px", height:"30px" , color:"white"}} type="button" onClick={handleOpen}>
         {console.log(Image[0])}
-        Open modal
-      </Button>
+        Buy
+      </button>
       <StyledModal
         aria-labelledby="unstyled-modal-title"
         aria-describedby="unstyled-modal-description"

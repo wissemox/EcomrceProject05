@@ -46,6 +46,138 @@
   }
 }
 
+.CatgoriesSHow04 {
+  -webkit-transition: 2s;
+  -webkit-animation: CatgoriesSHow04 2s;
+          animation: CatgoriesSHow04 2s;
+}
+
+@-webkit-keyframes CatgoriesSHow04 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes CatgoriesSHow04 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.CatgoriesSHow04s {
+  -webkit-transition: 2s;
+  -webkit-animation: CatgoriesSHow04s 2s;
+          animation: CatgoriesSHow04s 2s;
+}
+
+@-webkit-keyframes CatgoriesSHow04s {
+  from {
+    opacity: 0;
+    height: 0px;
+  }
+  to {
+    opacity: 1;
+    height: 350px;
+  }
+}
+
+@keyframes CatgoriesSHow04s {
+  from {
+    opacity: 0;
+    height: 0px;
+  }
+  to {
+    opacity: 1;
+    height: 350px;
+  }
+}
+
+.CatgoriesSHow04s2 {
+  -webkit-transition: 2s;
+  -webkit-animation: CatgoriesSHow04s2 2s;
+          animation: CatgoriesSHow04s2 2s;
+}
+
+@-webkit-keyframes CatgoriesSHow04s2 {
+  from {
+    opacity: 0;
+    height: 0px;
+  }
+  to {
+    opacity: 1;
+    height: 350px;
+  }
+}
+
+@keyframes CatgoriesSHow04s2 {
+  from {
+    opacity: 0;
+    height: 0px;
+  }
+  to {
+    opacity: 1;
+    height: 350px;
+  }
+}
+
+.AnimationOnMarginTopTomid02 {
+  padding-top: 100px;
+  -webkit-animation: AnimationOnMarginTopTomid03 2s;
+          animation: AnimationOnMarginTopTomid03 2s;
+}
+
+@-webkit-keyframes AnimationOnMarginTopTomid03 {
+  from {
+    display: none;
+    padding: 0px;
+  }
+  to {
+    padding-top: 100px;
+  }
+}
+
+@keyframes AnimationOnMarginTopTomid03 {
+  from {
+    display: none;
+    padding: 0px;
+  }
+  to {
+    padding-top: 100px;
+  }
+}
+
+.AnimationOnMarginTopTomid {
+  padding-top: 120px;
+  -webkit-animation: AnimationOnMarginTopTomid01 2s;
+          animation: AnimationOnMarginTopTomid01 2s;
+}
+
+@-webkit-keyframes AnimationOnMarginTopTomid01 {
+  from {
+    display: none;
+    padding: 0px;
+  }
+  to {
+    padding-top: 120px;
+  }
+}
+
+@keyframes AnimationOnMarginTopTomid01 {
+  from {
+    display: none;
+    padding: 0px;
+  }
+  to {
+    padding-top: 120px;
+  }
+}
+
 .CatgoriesSHow03 {
   -webkit-transition: 4s;
   -webkit-animation: CatgoriesSHow03 10s;
@@ -67,6 +199,33 @@
   }
   to {
     opacity: 1;
+  }
+}
+
+.ScaleAnimation02 {
+  -webkit-animation: ScaleAnimation02 2s;
+          animation: ScaleAnimation02 2s;
+}
+
+/* transform: scale(1.5) */
+@-webkit-keyframes ScaleAnimation02 {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes ScaleAnimation02 {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 /*# sourceMappingURL=CatgoriesAnimation.css.map */

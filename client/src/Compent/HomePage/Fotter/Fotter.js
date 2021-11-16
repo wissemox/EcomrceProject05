@@ -53,10 +53,11 @@ const Fotter = ({setCatgorie}) => {
           </div>
         </div>
       </div> */}
-       <div  style={{justifyContent:"space-around"}} className="flex flex-wrap ml-6 mr-6	">
+      <div id="product" style={{justifyContent:"center"}} className="flex">
+       <div  style={{justifyContent:"space-around" ,width:"90%"}} className="flex flex-wrap 	">
                     {ProductMap&&ProductMap.slice(0,9).map((el)=><FotterMap setCatgorie={setCatgorie} el={el}/>)}
                 </div>
-                
+        </div>        
     </div>
   );
 };

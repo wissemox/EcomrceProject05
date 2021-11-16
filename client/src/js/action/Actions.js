@@ -1,6 +1,7 @@
 // Import Model
 import axios from "axios";
-import { AddProduct, ReturnNull,ALLProduct ,RegisterUser,DecodedUser ,LoginUser ,  ProductValideMsg ,ActionValidetReturnNull } from "../constant/ActionType";
+import { AddProduct, ReturnNull,ALLProduct ,RegisterUser,DecodedUser ,LoginUser , 
+   ProductValideMsg ,ActionValidetReturnNull , AdminGetUser ,  DecodeAdmin } from "../constant/ActionType";
 // Register
 export const GetUserLogged=()=>async(dispatch)=>{
   const config = {
@@ -13,6 +14,24 @@ export const GetUserLogged=()=>async(dispatch)=>{
       console.log(res.data)
      dispatch({
         type:DecodedUser, 
+         payload:res.data,
+     });
+  }catch(error){
+      console.log(error)
+  }
+}
+
+export const GetAdminLogged=()=>async(dispatch)=>{
+  const config = {
+    headers: {
+      'x-auth-token': localStorage.getItem('AdminToken')
+    }
+  }
+  try{
+      const res = await axios.get("/api/Admin/Decoded",config)
+      console.log(res.data)
+     dispatch({
+        type:DecodeAdmin, 
          payload:res.data,
      });
   }catch(error){
@@ -52,6 +71,19 @@ export const LoginUser01=(formdata)=>async(dispatch)=>{
        console.log(error)
    }
  }
+
+
+ export const AAdminLoginUser=(formdata)=>async(dispatch)=>{
+  try{
+      const res = await axios.post("/api/Admin/Login",formdata)
+     dispatch({
+         type:AdminGetUser, 
+         payload:res.data,
+     });
+  }catch(error){
+      console.log(error)
+  }
+}
 // GetaLLpRODUCT
 export const ProductGetAll=()=>async(dispatch)=>{
     try{

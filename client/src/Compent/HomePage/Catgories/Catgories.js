@@ -25,7 +25,7 @@ const Catgories = ({ setCatgorie }) => {
   return (
     <Box
       style={{ marginLeft: "auto", marginRight: "auto", maxWidth: "1400px" }}
-      className="flex"
+      className="flex marginTopResposiveCatgories"
     >
       <div
         onClick={()=>setCatgorie("Anime")}
@@ -36,12 +36,12 @@ const Catgories = ({ setCatgorie }) => {
         {/* 606210.jpg */}
         <div style={{ height: "100%" }} className="backgroundColorTest">
           <p
-            className="pt-16"
+            className="pt-16 ptResposiveCatgories FontsieResposiveCatgories"
             style={{
               textAlign: "center",
               fontWeight: "600",
               color: "white",
-              fontSize: "25px",
+              
             }}
           >
             Tshirt Anime
@@ -59,8 +59,8 @@ const Catgories = ({ setCatgorie }) => {
         <Link to="/Product"> 
         <div style={{ height: "100%" }} className="backgroundColorTest">
           <p
-            className="pt-16"
-            style={{ textAlign: "center", color: "white", fontSize: "25px" }}
+            className="pt-16 ptResposiveCatgories FontsieResposiveCatgories"
+            style={{ textAlign: "center", color: "white"  }}
           >
             Manga
           </p>
@@ -78,8 +78,8 @@ const Catgories = ({ setCatgorie }) => {
         <Link to="/Product"> 
         <div style={{ height: "100%" }} className="backgroundColorTest">
           <p
-            className="pt-16"
-            style={{ textAlign: "center", color: "white", fontSize: "25px" }}
+            className="pt-16 ptResposiveCatgories FontsieResposiveCatgories"
+            style={{ textAlign: "center", color: "white" }}
           >
             Game
           </p>
@@ -95,8 +95,8 @@ const Catgories = ({ setCatgorie }) => {
       >
           <Link to="/Product"> 
         <p
-          className="pt-16  "
-          style={{ fontSize: "25px" , height:"100%", color: "white", textAlign: "center" }}
+          className="pt-16  ptResposiveCatgories FontsieResposiveCatgories"
+          style={{    height:"100%", color: "white", textAlign: "center" }}
         >
           Other
         </p>
