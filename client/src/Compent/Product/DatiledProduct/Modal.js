@@ -37,12 +37,14 @@ const Backdrop = styled('div')`
 `;
 
 const style = {
-  width: 400,
+  width: 650,
   bgcolor: 'white',
-  borderRadius: '40px',
-  p: 2,
-  px: 4,
-  pb: 3,
+    centerAdornment: {
+      marginLeft: "50%" // or your relevant measure
+    },
+    centerText: {
+      textAlign: "center"            
+    }
 };
 
 export default function ModalUnstyledDemo({Image , ProductName, Prix , open , setOpen}) {
@@ -74,9 +76,9 @@ export default function ModalUnstyledDemo({Image , ProductName, Prix , open , se
    }
   return (
     
-    <div className="ml-14 mt-4 mb-4">
+    <div className="ml-14 mlReposiveModal mt-4 mb-4">
 
-      <button style={{backgroundColor:"#f84816" , borderRadius:"20px",width:"100px", height:"30px" , color:"white"}} type="button" onClick={handleOpen}>
+      <button className="widht100px widhtResposiveModal borderRadiusResposive HeaightReposive" style={{backgroundColor:"#f84816"   , color:"white"}} type="button" onClick={handleOpen}>
         {console.log(Image[0])}
         Buy
       </button>
@@ -90,16 +92,23 @@ export default function ModalUnstyledDemo({Image , ProductName, Prix , open , se
         <Box sx={style}>
            {Error && Error.map((el)=><Alert severity="error">{el.msg}</Alert>)} 
             {console.log(Tail)}
-            <p>Name</p>
-            <TextField value={Name} onChange={(e)=>setName(e.target.value)} id="standard-basic" label="Standard" variant="standard" />
-            <p>lastName</p>
-            
-            <TextField value={lastName} onChange={(e)=>setlastName(e.target.value)} id="standard-basic" label="Standard" variant="standard" />
-            <p>Email</p>
-            <TextField value={Email} onChange={(e)=>setEmail(e.target.value)} id="standard-basic" label="Standard" variant="standard" />
-            <p>PhoneNumber</p>
-            <TextField value={PhoneNumdber} onChange={(e)=>setPhoneNumber(e.target.value)} type="Number" id="standard-basic" label="Standard" variant="standard" />
-            <FormControl fullWidth>
+            <div className="pl-24" style={{backgroundColor:"#2ac6dc" , height:"250px"}}> 
+               <img style={{width:"80%"}} src={process.env.PUBLIC_URL + `/logowhites.svg`}/>
+            </div>
+              <div style={{width:"100%" , paddingLeft:"150px" ,marginTop:"20px" }}> 
+                <TextField style={{width:"70%" , textAlign:"center"}} value={Name} onChange={(e)=>setName(e.target.value)} id="standard-basic" label="Name" variant="standard" />
+              </div>
+              <div style={{width:"100%" , paddingLeft:"150px" , marginTop:"20px" }} >
+                <TextField style={{width:"70%"}} value={lastName} onChange={(e)=>setlastName(e.target.value)} id="standard-basic" label="LastName" variant="standard" />
+              </div>
+              <div style={{width:"100%" , paddingLeft:"150px" , marginTop:"20px" }}> 
+                <TextField style={{width:"70%"}} value={Email} onChange={(e)=>setEmail(e.target.value)} id="standard-basic" label="Email" variant="standard" />
+              </div>
+              <div style={{width:"100%" , paddingLeft:"150px" , marginTop:"20px" }}> 
+               <TextField value={PhoneNumdber} style={{width:"70%"}} onChange={(e)=>setPhoneNumber(e.target.value)} type="Number" id="standard-basic" label="PhoneNumber" variant="standard" />
+              </div>
+              <div className="ml-36 mr-8 mt-4 mb-4 ">  
+            <FormControl size="medium" >
                 <p> Taill</p>
                 <Select
                   labelId="demo-simple-select-label"
@@ -116,9 +125,10 @@ export default function ModalUnstyledDemo({Image , ProductName, Prix , open , se
 
                 </Select>
               </FormControl>
-              <div className="flex"> 
-              <Button onClick={AddProuductVlaideFunction}>Buy</Button>
-              <Button>Cancel</Button>
+              </div>
+              <div className="flex ml-40 mt-8 mb-8"> 
+              <Button style={{backgroundColor:"#2ac6dc" , color:"white" , borderRadius:"0" , width:"40%"}} onClick={AddProuductVlaideFunction}>Buy</Button>
+              <Button onClick={()=>handleClose()} style={{backgroundColor:"#f84816" , color:"white" , borderRadius:"0" , width:"20%"}}>Cancel</Button>
               </div>
         </Box>
       </StyledModal>

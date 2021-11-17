@@ -1,0 +1,78 @@
+.ml-8Resposive {
+  margin-left: 2rem;
+}
+
+.borderRadiusResposive {
+  border-radius: 20px;
+}
+
+.HeaightReposive {
+  height: 30px;
+}
+
+.h-130Reposive {
+  height: 130px;
+}
+
+@media screen and (max-width: 1400px) {
+  .widht500px {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .widht500px {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .widht500px {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .h-130Reposive {
+    height: 100%;
+  }
+  .FontsizeReposive20px {
+    font-size: 20px;
+  }
+  .DisplayNone900RepsoiveDatiedPRoduct {
+    display: none;
+  }
+  .mlReposiveModal {
+    margin-left: 5px;
+  }
+  .widht500px {
+    width: 100%;
+  }
+  .ReposiveFlexDatied {
+    display: block;
+  }
+  .widhtReposive60prDatiedProduct {
+    width: 100%;
+  }
+  .widhtRepsoive33 {
+    width: 33%;
+  }
+  .ml-8Resposive {
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-right: 8px;
+  }
+  .widhtResposiveModal {
+    width: 100%;
+  }
+  .borderRadiusResposive {
+    border-radius: 0px;
+  }
+  .HeaightReposive {
+    height: 40px;
+  }
+  .marginLeftReposiveDatitedProduct {
+    margin-left: 5px;
+  }
+}
+/*# sourceMappingURL=DatiedProduct.css.map */

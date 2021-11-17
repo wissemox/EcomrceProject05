@@ -147,14 +147,14 @@ const DatitedProduct = ({ match }) => {
         {/* Porduct DAtied */}
         <div style={{ width: "100%" }} className="flex mt-7">
           <div
-            className="flex"
+            className="flex ReposiveFlexDatied"
             style={{
               maxWidth: "1600px",
               marginRight: "auto",
               marginLeft: "auto",
             }}
           >
-            <div className=" pr-6 pt-1" style={{ width: "5%" }}>
+            <div className=" pr-6 pt-1 DisplayNone900RepsoiveDatiedPRoduct" style={{ width: "5%" }}>
               <div
                 style={{
                   backgroundColor: "#2ac6dc",
@@ -164,13 +164,13 @@ const DatitedProduct = ({ match }) => {
                 }}
               ></div>
             </div>
-            <div className="mr-6" style={{ width: "500px" ,backgroundColor:"#2ac6dc"}}>
+            <div className="mr-6 widht500px" style={{ backgroundColor:"#2ac6dc"}}>
               {Product.filter((el) => el._id == match).map((el) => (
                 <ImageBig setTogelOpenModel={setTogelOpenModel} BollenAnimation01={BollenAnimation01} BollenAnimation={BollenAnimation}  Number={Number} el={el} />
               ))}
             </div>
 
-            <div style={{ width: "60%" }}>
+            <div className="widht-60pr widhtReposive60prDatiedProduct">
               {/* MapImage */}
               {Product.filter((el) => el._id == match).map((el , i) => (
                 <MapImage BollenAnimation01={BollenAnimation01} setBollenAnimation01={setBollenAnimation01} BollenAnimation={BollenAnimation} setBollenAnimation={setBollenAnimation} i={i} setNumber={setNumber} Number={Number} el={el} />
@@ -187,7 +187,7 @@ const DatitedProduct = ({ match }) => {
                 </div>
               ))}
             </div>
-            <div className="  ml-4" style={{ width: "5%" }}>
+            <div className=" DisplayNone900RepsoiveDatiedPRoduct  ml-4" style={{ width: "5%" }}>
               <div
                 className="ml-7"
                 style={{

@@ -26,12 +26,24 @@
   width: 15%;
 }
 
+.widht500px {
+  width: 500px;
+}
+
 .widht-35pr {
   width: 35%;
 }
 
 .widht-20pr {
   width: 40%;
+}
+
+.widthpr25 {
+  width: 25%;
+}
+
+.widht100px {
+  width: 100px;
 }
 
 .widht-40pr {
