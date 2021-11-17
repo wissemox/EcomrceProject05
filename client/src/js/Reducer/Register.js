@@ -6,7 +6,7 @@ import {
 from '../constant/ActionType'
 
 const RegisterGetinformation = {
-
+    Getuser:null,
     msg:null,
     errors:null,
 }; 
@@ -20,13 +20,14 @@ const RegisterUser01 = (state=RegisterGetinformation,{type, payload}) =>{
                 
                 ...state,  
                 ...payload,
+                
             }
             case LoginUser:
                 localStorage.setItem('token',payload.token)
                 return {
                     
                     ...state,  
-                    ...payload,
+                    Getuser:payload.Findemail,
                 }
 
             

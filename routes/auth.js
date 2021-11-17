@@ -7,7 +7,7 @@ const Product =require('../model/Product')
 const {validator , registerRules , loginRules} = require('../middlerwares/validator')
 const { findOne } = require('../model/User')
 router.post('/register',registerRules(),validator, async(req,res)=>{
-    const{name,lastName,email,password}=req.body; 
+    const{name,lastName,email,password , isAdmins}=req.body; 
     try{
      
          
@@ -15,7 +15,7 @@ router.post('/register',registerRules(),validator, async(req,res)=>{
          if(EmailVerif){ 
              return res.json({Error:"Emile alerdy exist"})
           }
-          const NewUser = new User({name , lastName , email , password}); 
+          const NewUser = new User({name , lastName , email , password , isAdmins}); 
           const salt = 10 
           const hashedPassword = await bcrypt.hash(password,salt)
           NewUser.password=hashedPassword;
@@ -49,7 +49,7 @@ router.post('/login',loginRules(),validator , async(req,res)=>{
             id:Findemail._id
         };
         const token = await jwt.sign(payload , process.env.sercerOrkey)
-        res.json({msg:"Loginn success",token})
+        res.json({msg:"Loginn success",Findemail,token})
     }catch(eror){
         console.log(eror)
     }

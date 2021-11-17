@@ -56,9 +56,9 @@ function App() {
       {/* <Route exact path="/" render={() =>  <Catgories /> } /> */}
       {console.log(Catgoire)}
       {/* Admin */}
-      <Route exact path="/Admin" render={() => <LoginAdmin/> } />
+      {/* <Route exact path="/Admin" render={() => <LoginAdmin/> } /> */}
 
-      <Route exact path="/Admin/dashboard" render={() => <Admin/> } />
+      <Route exact path="/dashboardAdmin" render={() => <Admin/> } />
       <Route exact path="/Register" render={() => <Register/> } />
       <Route exact path="/Login" render={() => <Login/> } />
       {/* Product */}

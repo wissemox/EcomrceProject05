@@ -20,6 +20,10 @@ const userShema = new Schema({
         type:String,
         required: true
     },
+    isAdmins :{
+        type:Boolean,
+        default:false
+    },
 }); 
 
 module.exports=User= mongoose.model('User',userShema)

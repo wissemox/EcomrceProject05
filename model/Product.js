@@ -15,6 +15,7 @@ const ProductShema = new Schema({
         type:String,
         required: true,
     },
+
     Image:[]
 }); 
 

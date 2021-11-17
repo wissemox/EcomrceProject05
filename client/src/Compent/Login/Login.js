@@ -17,6 +17,7 @@ const Login = () => {
   const LoginUserd = () => {
     dispatch(LoginUser01({ email, password }));
   };
+  const Token = localStorage.getItem('token')
   const error =null
   const noerror =null
   const [error01 , seterrorr] =useState(error)
@@ -64,7 +65,7 @@ const Login = () => {
               </div>
             </div>
             <div>
-              {Register.msg && <Redirect to="/" />}
+              {Register.Getuser&&Register.Getuser.isAdmins&& <Redirect to="/dashboardAdmin" /> ||Register.Getuser&&!Register.Getuser.isAdmins&&<Redirect to="/" /> }
               {/*Error  */}
               {Register.errors && <div> 
                 <div className="mt-24">
