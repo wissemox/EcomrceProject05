@@ -2,6 +2,7 @@ import React from "react";
 import { Parallax } from "react-parallax";
 import Button from "@mui/material/Button";
 import {Link} from 'react-router-dom'
+// import vide from '../../../../public/Test05.mp4'
 const MainPage = () => {
   // DisplayNoneReposivePhone
   return (
@@ -22,7 +23,7 @@ const MainPage = () => {
                 
                 }}
             >
-            <source src={process.env.PUBLIC_URL + `/Test.mp4`} ></source>
+            <source src={process.env.PUBLIC_URL + `/wissem.mp4`} ></source>
                 
             </video>
       
@@ -61,6 +62,8 @@ const MainPage = () => {
               </Link>
             </div>
           </div>
+          <img src="https://res.cloudinary.com/bgg/image/upload/v1637239873/Utako/g2nZq3X6bJEkeEbFyTfPfB_d9efkc.jpg"/>
+
         </div>
  
 {/* Reposive */}
