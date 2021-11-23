@@ -2,7 +2,7 @@ import React from "react";
 import { Parallax } from "react-parallax";
 import Button from "@mui/material/Button";
 import {Link} from 'react-router-dom'
-const MainPage = () => {
+ const MainPage = () => {
   // DisplayNoneReposivePhone
   return (
     <div>
@@ -22,14 +22,14 @@ const MainPage = () => {
                 
                 }}
             >
-            <source src={process.env.PUBLIC_URL + `/wissem.mp4`} ></source>
+            <source src={process.env.PUBLIC_URL + `/Wissem-1.m4v`} ></source>
                 
             </video>
       
 
-        <div className="DisplayNoneReposivePhone"> 
+        <div className=""> 
           <div className=""></div>
-          <div className=" text-center  pt-9     ImageMenuHeightResposive    " >
+          <div className=" text-center  pt-9 paddingReposivePhoneHomePage    ImageMenuHeightResposive    " >
            
            
             <div style={{ display: "flex", justifyContent: "center" }}>
@@ -56,6 +56,7 @@ const MainPage = () => {
                   >
                     <p>SHOP KNOW</p>
                   </div>
+                  
                 </div>
               </div>
               </Link>
