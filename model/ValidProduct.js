@@ -27,7 +27,10 @@ const ProductValideSchema = new Schema({
     Prix:{
         type:Number
     },
+    Quantité:{
+        type:Number
 
+    }
 
     
 }); 

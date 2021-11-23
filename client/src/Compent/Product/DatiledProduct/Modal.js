@@ -62,9 +62,11 @@ export default function ModalUnstyledDemo({Image , ProductName, Prix , open , se
   const [Tail , setTail]=useState()
   const [Email , setEmail]=useState()
   const[PhoneNumdber ,setPhoneNumber]=useState()
+  const[Qunatite ,setQuntite]=useState()
+
   const Dispatch = useDispatch()
   const AddProuductVlaideFunction = ()=>{
-      Dispatch(ProductValide({Name:Name , lastName:lastName , Tail:Tail ,Email:Email , PhoneNumber:PhoneNumdber ,ProductName:ProductName ,Image:Image[0] , Prix:Prix }))
+      Dispatch(ProductValide({Name:Name , lastName:lastName , Tail:Tail ,Email:Email , PhoneNumber:PhoneNumdber ,ProductName:ProductName , Quantité:Qunatite ,Image:Image[0] , Prix:Prix }))
     
   }
   const MSG = useSelector(state => state.ProductValide.msg)
@@ -92,22 +94,25 @@ export default function ModalUnstyledDemo({Image , ProductName, Prix , open , se
         <Box sx={style}>
            {Error && Error.map((el)=><Alert severity="error">{el.msg}</Alert>)} 
             {console.log(Tail)}
-            <div className="pl-24" style={{backgroundColor:"#2ac6dc" , height:"250px"}}> 
+            <div className="pl-24 h-250ReposiveModal" style={{backgroundColor:"#2ac6dc" }}> 
                <img style={{width:"80%"}} src={process.env.PUBLIC_URL + `/logowhites.svg`}/>
             </div>
-              <div style={{width:"100%" , paddingLeft:"150px" ,marginTop:"20px" }}> 
+              <div className="paddingLeft150ResposiveModal" style={{width:"100%" ,  marginTop:"20px" }}> 
                 <TextField style={{width:"70%" , textAlign:"center"}} value={Name} onChange={(e)=>setName(e.target.value)} id="standard-basic" label="Name" variant="standard" />
               </div>
-              <div style={{width:"100%" , paddingLeft:"150px" , marginTop:"20px" }} >
+              <div  className="paddingLeft150ResposiveModal" style={{width:"100%"  , marginTop:"20px" }} >
                 <TextField style={{width:"70%"}} value={lastName} onChange={(e)=>setlastName(e.target.value)} id="standard-basic" label="LastName" variant="standard" />
               </div>
-              <div style={{width:"100%" , paddingLeft:"150px" , marginTop:"20px" }}> 
+              <div className="paddingLeft150ResposiveModal" style={{width:"100%" , marginTop:"20px" }}> 
                 <TextField style={{width:"70%"}} value={Email} onChange={(e)=>setEmail(e.target.value)} id="standard-basic" label="Email" variant="standard" />
               </div>
-              <div style={{width:"100%" , paddingLeft:"150px" , marginTop:"20px" }}> 
+              <div className="paddingLeft150ResposiveModal" style={{width:"100%" ,   marginTop:"20px" }}> 
                <TextField value={PhoneNumdber} style={{width:"70%"}} onChange={(e)=>setPhoneNumber(e.target.value)} type="Number" id="standard-basic" label="PhoneNumber" variant="standard" />
               </div>
-              <div className="ml-36 mr-8 mt-4 mb-4 ">  
+              <div className="flex"> 
+                {/*Quantité  */}
+            
+              <div className="ml-36 marginLeftReposiveModal mr-8 mt-4 mb-4 ">  
             <FormControl size="medium" >
                 <p> Taill</p>
                 <Select
@@ -125,6 +130,12 @@ export default function ModalUnstyledDemo({Image , ProductName, Prix , open , se
 
                 </Select>
               </FormControl>
+              
+              </div>
+              <div   style={{width:"100%" ,   marginTop:"30px" }}> 
+               <TextField value={Qunatite} style={{width:"65%"}} onChange={(e)=>setQuntite(e.target.value)} type="Number" id="standard-basic" label="Qunatite" variant="standard" />
+              </div>
+              
               </div>
               <div className="flex ml-40 mt-8 mb-8"> 
               <Button style={{backgroundColor:"#2ac6dc" , color:"white" , borderRadius:"0" , width:"40%"}} onClick={AddProuductVlaideFunction}>Buy</Button>

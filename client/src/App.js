@@ -33,6 +33,8 @@ import "./Css/Reposive/Spinner.scss"
 import "./Css/Reposive/Catgories.scss"
 import "./Css/Reposive/Product.scss"
 import "./Css/Reposive/DatiedProduct.scss"
+import "./Css/Reposive/Modal.scss"
+
 // Route 
 import {Redirect} from 'react-router-dom'
 import LogowhiteAnimatiion from './logo/LogowhiteAnimatiion'

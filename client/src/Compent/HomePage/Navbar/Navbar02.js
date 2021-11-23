@@ -21,15 +21,34 @@ window.addEventListener('scroll' ,changeBackground )
     <div  className="" > 
       {ShowMenu && (
         <div>
-          <AppBar
+    <AppBar
             className="AnimationHoverNavbar"
             style={{ height: "100vh", backgroundColor: "white" }}
           >
-            <p style={{ color: "red" }}>adz</p>
-            <MenuIcon
-              style={{ color: "black" }}
-              onClick={() => setShowMenu(!ShowMenu)}
-            />
+            <div className="flex">  
+              <div className="pl-4 pt-4" style={{width:"50%"}}>
+                  <div className="pb-6"> 
+                  <Link to="/" smooth={true} duration={800} style={{fontSize:"18px",fontWeight:"600",color:"black"}} className="pr-8 text-base pt-2        ">Home</Link>
+                  </div>
+                  <div className="pb-6">
+                  <Link to="/product" smooth={true} duration={800} style={{fontSize:"18px",fontWeight:"600",color:"black"}} className="pr-8 text-base pt-2        ">Product</Link>
+                  </div>
+                  <div className="pb-6">
+                  <Link to="/login" smooth={true} duration={800} style={{fontSize:"18px",fontWeight:"600",color:"#2ac6dc"}} className="pr-8 text-base pt-2        ">Login</Link>
+                  </div>
+                  <div className="pb-6">
+                  <Link to="/register" smooth={true} duration={800} style={{fontSize:"18px",fontWeight:"600",color:"#f84816"}} className="pr-8 text-base pt-2        ">Register</Link>
+                  </div>
+              </div>
+              
+              <div className="flex pt-6 pl-2 pr-4" style={{width:"50%" , justifyContent:"flex-end"}}>
+                  <MenuIcon
+                  style={{ color: "black" }}
+                  onClick={() => setShowMenu(!ShowMenu)}
+                  />
+               </div>
+            </div>
+          
           </AppBar>
         </div>
       )}

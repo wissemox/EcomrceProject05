@@ -1,0 +1,13 @@
+.paddingLeft150ResposiveModal {
+  padding-left: 150px;
+}
+
+@media screen and (max-width: 600px) {
+  .paddingLeft150ResposiveModal {
+    padding-left: 100px;
+  }
+  .marginLeftReposiveModal {
+    margin-left: 100px;
+  }
+}
+/*# sourceMappingURL=Modal.css.map */

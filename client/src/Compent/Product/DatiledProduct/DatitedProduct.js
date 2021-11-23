@@ -48,8 +48,8 @@ const DatitedProduct = ({ match }) => {
         {TogelOpenModel&& <div >  <div className={`${TogelOpenModel&&"ScaleAnimation02"} backgroundColorTest12`}  onClick={()=>setTogelOpenModel(false)} style={{position:"absolute" , width:"100%" , height:"105vh" , }}>
 
         </div>
-          <div className={`${TogelOpenModel&&"ScaleAnimation02"} backgroundColorTest12 flex justify-center`} > 
-          <div style={{position:"absolute" , marginTop:"5%"  ,width:"50%" , height:"50%"}}>
+          <div className={`${TogelOpenModel&&"ScaleAnimation02"} backgroundColorTest12  flex justify-center`} > 
+          <div className="widht-50pr h-3/6 w-3/6 widhtHeaightReposiveTo50to100DatiedProduct marginTop5prDatiedProduct" style={{position:"absolute" }}>
           {Product.filter((el) => el._id == match).map((el)=><img  src={el.Image[Number]}/>)}
           </div> 
         </div>
@@ -92,9 +92,9 @@ const DatitedProduct = ({ match }) => {
           // Background
           <div>
             <div
+            className="h-200px HeaghtReposiveDatieedProduct"
               style={{
                 backgroundColor: "#f2f2f2",
-                height: "200px",
                 backgroundImage: `url(${el.Image[0]})`,
                 backgroundSize: "cover",
               }}
@@ -145,9 +145,9 @@ const DatitedProduct = ({ match }) => {
         ))}
 
         {/* Porduct DAtied */}
-        <div style={{ width: "100%" }} className="flex mt-7">
+        <div style={{ width: "100%" }} className="flex mt-7 marginLeftReposiveDatiedPRoduct">
           <div
-            className="flex ReposiveFlexDatied"
+            className="flex dsqd ReposiveFlexDatied"
             style={{
               maxWidth: "1600px",
               marginRight: "auto",
@@ -164,7 +164,7 @@ const DatitedProduct = ({ match }) => {
                 }}
               ></div>
             </div>
-            <div className="mr-6 widht500px" style={{ backgroundColor:"#2ac6dc"}}>
+            <div className="mr-6 widht500px  MarginLeftDatiedProductImageBig" style={{ backgroundColor:"#2ac6dc"}}>
               {Product.filter((el) => el._id == match).map((el) => (
                 <ImageBig setTogelOpenModel={setTogelOpenModel} BollenAnimation01={BollenAnimation01} BollenAnimation={BollenAnimation}  Number={Number} el={el} />
               ))}

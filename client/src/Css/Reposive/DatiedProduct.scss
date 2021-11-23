@@ -1,6 +1,9 @@
 .ml-8Resposive{
     margin-left: 2rem;
 }
+.marginTop5prDatiedProduct{
+    margin-top: 5%;
+}
 .borderRadiusResposive{
     border-radius: 20px;
 }
@@ -28,8 +31,57 @@
 }
 
 // ReposiveFlexDatied
+// HeaghtReposiveDatieedProduct
+@media screen and (max-width: 900px){
+    .HeaghtReposiveDatieedProduct{
+        height: 100px;
+    }
+}
+// widhtReposive60prDatiedProduct
+// 
 
 @media screen and (max-width: 900px){
+    
+    .widhtHeaightReposiveTo50to100DatiedProduct{
+        width: 100%;
+        height: 50%;
+    }
+    .marginLeftReposiveDatiedPRoduct{
+        padding-left: 3%;
+    }
+    .widhtpr20ReposiveDatied{
+        width: 20%;
+    }
+    @keyframes CatgoriesSHow04s {
+        from {
+          opacity: 0;
+          height: 0px;
+        }
+      
+        to {
+          opacity: 1;
+          height: 260px;
+        }
+      }
+      @keyframes CatgoriesSHow04s2 {
+        from {
+          opacity: 0;
+          height: 0px;
+        }
+      
+        to {
+          opacity: 1;
+          height: 260px;
+        }
+      }
+    
+    
+    .HeagihtReposive140ALLimageProduc{
+        height: 100px;
+    }
+    .HeaightReposive350ProductDatied{
+        height: 260px;
+    }
     .h-130Reposive{
         height: 100%;
     }
@@ -43,13 +95,16 @@
         margin-left: 5px;
     }
     .widht500px{
-        width: 100%;
+        margin-left: 12%;
+  
+        width: 68.2%;
     }
      .ReposiveFlexDatied{
          display: block;
      }
      .widhtReposive60prDatiedProduct{
-         width: 100%;
+         width: 70%;
+         margin-left: 90px;
      }
      .widhtRepsoive33{
          width: 33%;
@@ -71,4 +126,119 @@
      .marginLeftReposiveDatitedProduct{
          margin-left: 5px;
      }
+}
+@media screen and (max-width: 800px){
+    
+    .widht500px{
+       margin-left: 12.5%;
+ 
+       width: 68%;
+   }
+   .marginTop5prDatiedProduct{
+    margin-top: 7%;
+}
+
+}
+
+@media screen and (max-width: 770px){
+    // .dsqd{
+    //     background-color: red;
+    // }
+    .widht500px{
+       margin-left: 12.5%;
+ 
+       width: 68.2%;
+   }
+}
+
+@media screen and (max-width: 760px){
+    //  .dsqd{
+    //      background-color: blue;
+    // }
+    .widht500px{
+       margin-left: 12.9%;
+ 
+       width: 68.2%;
+   }
+}
+
+@media screen and (max-width: 740px){
+  
+    .widht500px{
+       margin-left: 13%;
+ 
+       width: 68%;
+   }
+}
+
+@media screen and (max-width: 730px){
+  
+    .widht500px{
+       margin-left: 13.2%;
+ 
+       width: 68.1%;
+   }
+}
+@media screen and (max-width: 720px){
+    // .dsqd{
+    //     background-color: red;
+    // }
+    .widht500px{
+       margin-left: 13.5%;
+ 
+       width: 68.1%;
+   }
+}
+@media screen and (max-width: 710px){
+ 
+    .widht500px{
+       margin-left: 13.8%;
+ 
+       width: 68%;
+   }
+}
+@media screen and (max-width: 700px){
+ 
+    .marginTop5prDatiedProduct{
+        margin-top: 10%;
+    }
+     .marginLeftReposiveDatiedPRoduct{
+        padding-left: 1%;
+     }
+     .widht500px{
+        margin-left: 15%;
+  
+        width: 68%;
+    }
+}
+//  .widhtReposive60prDatiedProduct{
+//     width: 70%;
+//     margin-left: 90px;
+// }
+@media screen and (max-width: 690px){
+   
+    .widhtReposive60prDatiedProduct{
+        width: 70.6%;
+        margin-left: 14.1%;
+    }
+    
+}
+
+@media screen and (max-width: 600px){
+    .marginTop5prDatiedProduct{
+        margin-top: 30%;
+    }
+   .marginLeftReposiveDatiedPRoduct{
+    padding-left: 0%;
+   }
+    .HeagihtReposive140ALLimageProduc{
+        height: 80px;
+    }
+}
+
+@media screen and (max-width: 400px){
+   
+    .HeagihtReposive140ALLimageProduc{
+        height: 50px;
+    }
 }

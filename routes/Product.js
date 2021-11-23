@@ -25,12 +25,12 @@ router.delete('/DeleteWidhId/:id',async(req,res)=>{
     }
 })
 router.post('/ProductValide',ProductValidetaor(),validator , async(req,res)=>{
-    const {Name , lastName , Tail ,Email,PhoneNumber , ProductName , Image , Prix } = req.body
+    const {Name , lastName , Tail ,Email,PhoneNumber , ProductName , Image , Prix ,Quantité} = req.body
     try{
-        if(!ProductName || !Image || !Prix ){
+        if(!ProductName || !Image || !Prix ||!Quantité ){
             res.json({errors:[{msg:"Entre all filed"}]})
         }
-        const ProductValide01 = new ProductValide({Name , lastName , Tail , Email ,PhoneNumber ,ProductName , Image ,Prix  });        
+        const ProductValide01 = new ProductValide({Name , lastName , Tail , Email ,PhoneNumber ,ProductName , Image ,Prix , Quantité  });        
          await ProductValide01.save();
         res.json({msg:"Your Commendd send with success" , ProductValide01})
     }
