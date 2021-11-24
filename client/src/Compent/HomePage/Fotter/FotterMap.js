@@ -16,7 +16,9 @@ const FotterMap = ({el , i  ,  setCatgorie}) => {
             </div>
             </Link>
             <div   style={{overflow:"hidden"}}> 
-                <img className="" style={{width:"100%" , height:"200px",borderRadius:"30px"}} src={el.Image[2]}/>
+                <img className="" style={{width:"100%" , height:"200px",borderRadius:"30px"}} src={el.Image02[2]}/>
+                {/* <img className="" style={{width:"100%" , height:"200px",borderRadius:"30px"}} src={el.Image02[2]}/> */}
+
             </div>
            <p className="text-center pt-12 pb-4 font-semibold text-lg			">{el.ProductName}</p>
            <p className="text-center font-semibold">TND{el.Prix}</p>

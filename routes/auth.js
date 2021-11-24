@@ -106,7 +106,7 @@ router.post('/Product', async(req,res)=>{
      await   Array.push(uploadedResponse03.url)
     }
   }
-  const ProductSave = new Product({ProductName:ProductName , Prix:Prix , Tail:Tail , Image:Array}); 
+  const ProductSave = new Product({ProductName:ProductName , Prix:Prix , Tail:Tail , Image:Array , Image02:image02}); 
   await ProductSave.save();
 
    res.json({msg:"ProductSave",ProductSave})

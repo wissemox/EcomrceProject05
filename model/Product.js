@@ -16,7 +16,8 @@ const ProductShema = new Schema({
         required: true,
     },
 
-    Image:[]
+    Image:[], 
+    Image02:[]
 }); 
 
 module.exports=Product= mongoose.model('Product',ProductShema)
