@@ -13,6 +13,9 @@
 .h-130Reposive{
     height: 130px;
 }
+.HeagithReposive500pxDatiedProduct{
+    height: 500px;
+}
 @media screen and (max-width: 1400px){
     .widht500px{
          width: 350px;
@@ -22,6 +25,25 @@
     .widht500px{
          width: 300px;
     }
+    .HeagithReposive500pxDatiedProduct{
+        
+        height: 100%;
+        width: 100%;
+    }
+    .ScaleAnimation02{
+        animation: ScaleAnimation02 2s;
+      }
+      @keyframes ScaleAnimation02{
+        from {
+           
+            opacity: 0;
+
+        }
+        to {
+            opacity: 1;
+
+        }
+      }
 }
 
 @media screen and (max-width: 1200px){
@@ -41,7 +63,11 @@
 // 
 
 @media screen and (max-width: 900px){
-    
+    .HeagithReposive500pxDatiedProduct{
+        
+        height: 100%;
+        width: 100%;
+    }
     .widhtHeaightReposiveTo50to100DatiedProduct{
         width: 100%;
         height: 50%;
@@ -52,6 +78,20 @@
     .widhtpr20ReposiveDatied{
         width: 20%;
     }
+    .ScaleAnimation02{
+        animation: ScaleAnimation02 2s;
+      }
+      @keyframes ScaleAnimation02{
+        from {
+          
+            opacity: 0;
+
+        }
+        to {
+            opacity: 1;
+
+        }
+      }
     @keyframes CatgoriesSHow04s {
         from {
           opacity: 0;

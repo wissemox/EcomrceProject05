@@ -50,7 +50,7 @@ const DatitedProduct = ({ match }) => {
         </div>
           <div className={`${TogelOpenModel&&"ScaleAnimation02"} backgroundColorTest12  flex justify-center`} > 
           <div className="widht-50pr h-3/6 w-3/6 widhtHeaightReposiveTo50to100DatiedProduct marginTop5prDatiedProduct" style={{position:"absolute" }}>
-          {Product.filter((el) => el._id == match).map((el)=><img  src={el.Image[Number]}/>)}
+          {Product.filter((el) => el._id == match).map((el)=><img className="HeagithReposive500pxDatiedProduct ScaleAnimation02" style={{marginRight:"auto" , marginLeft:"auto" , marginTop:"auto" }}  src={el.Image[Number]}/>)}
           </div> 
         </div>
         </div>}
@@ -95,7 +95,7 @@ const DatitedProduct = ({ match }) => {
             className="h-200px HeaghtReposiveDatieedProduct"
               style={{
                 backgroundColor: "#f2f2f2",
-                backgroundImage: `url(${el.Image[0]})`,
+                backgroundImage: `url(${el.Image02[0]})`,
                 backgroundSize: "cover",
               }}
             ></div>
