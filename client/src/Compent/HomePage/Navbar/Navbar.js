@@ -13,9 +13,9 @@ function Navbar() {
 
   const changeBackground =()=>{
      
-    if(window.scrollY>200){
+    if(window.scrollY>140){
         setScroll(true)
-    }else{
+    }if(window.scrollY==0){
         setScroll(false)
     }
 }
@@ -71,7 +71,7 @@ window.addEventListener('scroll' ,changeBackground02 )
           </AppBar>
         </div>
       )}
-  {!ShowMenu && <AppBar  position={`${Scrool ? "fixed" : "sticky"}`} style={{color:!Scrool?"black":"white" , backgroundColor:!Scrool?"white":"#2ac6dc" , boxShadow:"none" }} className={`${Scrool&&"AnimaiionNavbarSticky"} mb-4 mt-0`} >
+  {!ShowMenu && <AppBar  position={`${Scrool ? "fixed" : "static"}`} style={{color:!Scrool?"black":"white" , backgroundColor:!Scrool?"white":"#2ac6dc" , boxShadow:"none" }} className={`${Scrool&&"AnimaiionNavbarSticky"} mb-4 mt-0`} >
         <div  className={`${Scrool ?"pt-1" :"ptpr1"}   widht100pr flex mx-widht1400`}>
           <div className="flex ml-3 pb-2 widht-10pr widhtReposive  ">
             {Scrool ?<div  className={`${Scrool &&"pb-1"} ptReposiveNavbar ${Scrool ?"widht-20pr" :"widht-40pr"}   widhtImageReposive`}><Logowhites/>  </div>:<div  className={`${Scrool &&"pb-1"} ${Scrool ?"widht-20pr" :"widht-40pr"}   widhtImageReposive ptReposiveNavbar`}> <Logo02/></div>}

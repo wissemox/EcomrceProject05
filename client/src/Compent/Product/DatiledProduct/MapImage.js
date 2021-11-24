@@ -13,7 +13,7 @@ const MapImage = ({el   ,Number , setNumber,setBollenAnimation01,BollenAnimation
         <div style={{justifyContent:"space-evenly"}} className="flex">
               
                     
-            {el.Image.map((el ,i)=><div onClick={()=>ClickCompeImageMap(i)} className="ml-8Resposive  widthpr25  widhtRepsoive33" >
+            {el.Image02.map((el ,i)=><div onClick={()=>ClickCompeImageMap(i)} className="ml-8Resposive  widthpr25  widhtRepsoive33" >
                 <img className="HeagihtReposive140ALLimageProduc"  style={{width:"220px"}}  src={el}/>
             </div>)}
                     
